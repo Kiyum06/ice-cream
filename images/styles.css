@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: darkred;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+
+main {
+    background-color: white;
+    width: 70%;
+    margin: 0 auto 1rem auto;
+    padding: 0 1rem 2rem 1rem;
+}
+
+header {
+    background-color: lightgray;
+    border-radius: .25rem;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+}
+
+fieldset {
+    border: 1px solid darkgreen;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+}
+

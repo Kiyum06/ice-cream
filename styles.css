@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(20, 31, 39);
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+
+main {
+    background-color: white;
+    width: 70%;
+    margin: 0 auto 1rem auto; 
+    padding: 0 1rem 2rem 1rem;
+}  
+
+header {
+    background-color: lightgray;
+    border-radius: .25rem;
+    padding: 2rem 1rem; 
+    margin-bottom: 2rem;
+}
+
+header img {
+    float:right;
+    max-width: 200px;
+}
+
+
+legend {
+    color: darkgreen; 
+    font-variant: small-caps;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+fieldset {
+    border: 2px solid darkgreen;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+label {
+    display: block;
+    padding-bottom: .2rem;
+} 
+
+input[type="text"], textarea, select {
+    width: 100%;
+    border: 1px solid rgb(20, 20, 20);
+    border-radius: .25rem;
+    margin-bottom: 1rem;
+    padding: .75rem;
+}
+
+#cones {
+    border-radius: 5rem;
+    
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+    color: black;
+}
+
+#toppings {
+    border-radius: 1rem;
+    margin: 1rem 0;
+    
+}
+
+#order-button {
+    background-color: darkgreen;
+    color: white;
+}
+
+
+
