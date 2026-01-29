@@ -8,7 +8,9 @@
       <link rel="icon" href="images/icecream.jpg"> 
 
       <!-- stylesheet -->
-     <link rel="stylesheet" href="styles.css">  
+     <link rel="stylesheet" href="style/styles.css"> 
+
+     <script src="js/ice-cream.js" defer></script>
 
        
 
@@ -18,13 +20,20 @@
     <main>
         <h1>Ice Cream Order Form</h1>
 
-        <form id="icecream form" action="#" method="get">
+        <form id="icecream-form" action="#" method="get">
             <!-- personal info -->
             <fieldset>
                 <legend>Personasl Information</legend>
                 <label for="name">Name:</label>
+                <span class="err" id="err-fname">
+                    Name is required!
+                </span>
                 <input type="text" id="name" name="name">
+
                 <label for="email">Email:</label>
+                <span class="err" id="err-fname">
+                    Email is required!
+                </span>
                 <input type="text" id="email" name="email">
             </fieldset>
 
@@ -33,6 +42,9 @@
                 <!-- Flavors -->
                 <legend>Order Details</legend>
                 <label for="flavor">Choose your flavor:</label>
+                <span class="err" id="err-flavor">
+                    Please select a flavor!
+                </span>
                 <select id="flavor" name="flavor">
                     <option value="none">-- Flavors --</option>
                     <option value="vanilla">Vanilla</option>
@@ -43,9 +55,12 @@
                 <!-- Cone -->
                  <div id="cones">
                     <label for="cone">Choose your cone:</label>
-                    <input type="radio" id="cone" value="cone" name="method">Waffle Cone
-                    <input type="radio" id="cone" value="cone" name="method">Sugar Cone
-                    <input type="radio" id="cone" value="cone" name="method">Cup
+                    <span class="err" id="err-cone">
+                        Please select a cone!
+                    </span>
+                    <input type="radio" id="waffle" value="waffle" name="method">Waffle Cone
+                    <input type="radio" id="sugar" value="sugar" name="method">Sugar Cone
+                    <input type="radio" id="cup" value="cup" name="method">Cup
                  </div>
 
                  <!-- Toppings -->

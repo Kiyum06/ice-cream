@@ -29,3 +29,7 @@ fieldset {
     margin-bottom: 1.25rem;
 }
 
+.err {
+    color: darkred;
+    display: none;
+}
