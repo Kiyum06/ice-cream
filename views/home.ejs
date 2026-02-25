@@ -18,7 +18,7 @@
     <main>
         <h1>Ice Cream Order Form</h1>
 
-        <form id="icecream-form" action="#" method="get">
+        <form id="icecream-form" action="/submit-order" method="post">
             <!-- personal info -->
             <fieldset>
                 <legend>Personal Information</legend>
@@ -51,15 +51,14 @@
                 </select>  
 
                 <!-- Cone -->
-                 <div id="cones">
-                    <label for="cone">Choose your cone:</label>
-                    <span class="err" id="err-cone">
-                        Please select a cone!
-                    </span>
-                    <input type="radio" id="waffle" value="waffle" name="method">Waffle Cone
-                    <input type="radio" id="sugar" value="sugar" name="method">Sugar Cone
-                    <input type="radio" id="cup" value="cup" name="method">Cup
-                 </div>
+                <label for="cone">Choose your cone:</label>
+                <span class="err" id="err-cone">
+                    Please select a cone!
+                </span>
+                <input type="radio" id="waffle" value="waffle" name="cone">Waffle Cone
+                <input type="radio" id="sugar" value="sugar" name="cone">Sugar Cone
+                <input type="radio" id="cup" value="cup" name="cone">Cup
+
 
                  <!-- Toppings -->
 
@@ -84,10 +83,14 @@
         </form>
 
 
-
-
-
     </main>
+
+        <footer class="page-footer">
+            Admin Page:
+            <a href="http://localhost:3006/admin" target="_blank">
+                http://localhost:3006/admin
+            </a>
+        </footer>
     
 </body>
 </html>

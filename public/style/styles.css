@@ -82,3 +82,25 @@ fieldset label input[type="checkbox"] {
   font-size: 0.9rem;
   margin-left: 0.5rem;
 }
+
+
+/* footer */
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    color: darkblue;
+    font-size: 14px;
+}
+
+.page-footer a {
+    color: #2272b9;
+    text-decoration: none;
+}
+
+.page-footer a:hover {
+    text-decoration: underline;
+    color: darkgoldenrod;
+}
