@@ -1,35 +1,84 @@
-* {
+* { 
     box-sizing: border-box;
-}
+ }
 
 body {
-    margin: 0;
-    background-color: darkred;
-    font-family: 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  background: #eaf3ff;         
+  font-family: 'Segoe UI', Roboto, sans-serif;
 }
-
 
 main {
-    background-color: white;
-    width: 70%;
-    margin: 0 auto 1rem auto;
-    padding: 0 1rem 2rem 1rem;
+  width: 70%;
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
-header {
-    background-color: lightgray;
-    border-radius: .25rem;
-    padding: 2rem 1rem;
-    margin-bottom: 2rem;
+h1 {
+  text-align: center;
+  margin-top: 0;
 }
 
 fieldset {
-    border: 1px solid darkgreen;
-    padding: 1rem;
-    margin-bottom: 1.25rem;
+  border: 1px solid #cfcfcf;   
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+legend {
+  color: #2e9e48;             
+  font-weight: 700;
+  padding: 0 0.75rem;
+  text-align: center;
+}
+
+label, p {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  font: inherit;
+}
+
+fieldset label input[type="radio"],
+fieldset label input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+#order-button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #4CAF50;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#order-button:hover {
+  filter: brightness(0.95);
 }
 
 .err {
-    color: darkred;
-    display: none;
+  color: darkred;
+  display: none;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
 }

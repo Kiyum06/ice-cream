@@ -15,7 +15,7 @@ document.getElementById("icecream-form").onsubmit = () => {
 
     //validate email address
     let email = document.getElementById("email").value.trim();
-    if(!email && !"@") {
+    if(!email || !email.includes("@")) {
         document.getElementById("err-email").style.display = "block";
         isValid = false;
     }
